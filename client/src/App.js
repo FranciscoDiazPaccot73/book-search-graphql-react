@@ -6,6 +6,8 @@ import { ApolloProvider } from 'react-apollo';
 import BookList from './components/BookList/BookList';
 import AddBook from './components/AddBook/AddBook';
 
+import './App.scss';
+
 const client = new ApolloClient({
   uri: 'http://localhost:4000/graphql',
 });
@@ -13,10 +15,8 @@ const client = new ApolloClient({
 const App = () => {
   return (
     <ApolloProvider client={client}>
-      <div id="main">
-        <h1>Ninja's Reading List</h1>
+      <div className="main-class">
         <BookList />
-        <AddBook />
       </div>
     </ApolloProvider>
   );

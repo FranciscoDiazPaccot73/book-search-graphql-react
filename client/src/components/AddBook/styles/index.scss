@@ -1,0 +1,54 @@
+.add-book {
+  left: 0;
+  position: absolute;
+  top: 65px;
+  transition: all 500ms ease;
+  width: 400px;
+  z-index: 1;
+
+  &__open {
+    left: 415px;
+    transition: all 500ms ease;
+  }
+
+  .field {
+    color: rgb(126, 126, 126);
+    display: flex;
+    align-items: center;
+    height: 40px;
+
+    input {
+      height: 16px;
+      padding: 2px;
+      width: 250px;
+    }
+
+    select {
+      height: 26px;
+      width: 258px;
+    }
+  }
+
+  &__label {
+    display: inline-block;
+    width: 100px;
+  }
+
+  &__button {
+    align-items: center;
+    border: 1px white solid;
+    border-radius: 4px;
+    color: white;
+    display: flex;
+    font-size: 14px;
+    height: 24px;
+    justify-content: center;
+    margin-top: 8px;
+    width: 90%;
+
+    &:hover {
+      background-color: rgba(48, 48, 48, 0.904); 
+      cursor: pointer;
+    }
+  }
+}

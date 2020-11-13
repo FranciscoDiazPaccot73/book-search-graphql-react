@@ -1,0 +1,61 @@
+.book {
+  position: relative;
+  width: 400px;
+
+  &__add-button {
+    color: rgb(126, 126, 126);
+    cursor: pointer;
+    font-size: 12px;
+    letter-spacing: 1px;
+    position: absolute;
+    right: 8px;
+    top: 44px;
+  }
+
+  &-container__left {
+    position: relative;
+    z-index: 100;
+
+    h1 {
+      margin: 0;
+      height: 48px;
+      color: rgba(255,255,255,1);
+    }
+  }
+
+  &-list {
+    background-color: rgba(0,0,0,1);
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    list-style-type: none;
+    min-height: 160px;
+    padding: 8px 0;
+    width: 400px;
+
+    &__loading {
+      color: white;
+      text-align: center;
+    }
+    
+    .selected {
+      background-color: rgba(104, 104, 104, 0.5);
+      color: rgba(255,255,255,1);
+    }
+  
+    li {
+      align-items: center;
+      color: rgb(126, 126, 126);
+      cursor: pointer;
+      display: flex;
+      height: 48px;
+      padding: 0px 20px;
+  
+      &:hover {
+        background-color: rgba(104, 104, 104, 0.5);
+        color: rgba(255,255,255,1);
+      }
+    }
+  }
+}
