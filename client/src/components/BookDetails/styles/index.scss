@@ -39,8 +39,9 @@
     height: 0;
     
     &--opened {
+      height: 100%;
       opacity: 1;
-      transition: opacity 1500ms ease-in-out;
+      transition: all 1500ms ease-in-out;
       width: 100%;
     }
 

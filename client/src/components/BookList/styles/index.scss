@@ -6,10 +6,18 @@
     color: rgb(126, 126, 126);
     cursor: pointer;
     font-size: 12px;
+    left: 300px;
     letter-spacing: 1px;
     position: absolute;
-    right: 8px;
+    text-align: end;
     top: 44px;
+    transition: all 500ms ease;
+    width: 90px;
+
+    &--opened {
+      left: 676px;
+      transition: all 500ms ease;
+    }
   }
 
   &-container__left {

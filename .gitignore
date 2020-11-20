@@ -2,3 +2,5 @@
 /server/mongoose-config.js
 /server/node_modules
 /server/yarn.lock
+
+debug.log
